@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import Layout from "./layout/Layout"
 import NoteInput from "./components/NoteInput"
-import Note from "./components/Note"
+import Notes from "./components/Notes"
+import "./css/style.css"
 
 const App = () => {
   const [notes, setNotes] = useState([])
@@ -13,12 +14,16 @@ const App = () => {
     console.log(notes.length)
   }
 
+  const deleteHandler = (id) => {
+    setNotes((prevNote) => {
+      return prevNote.filter((noteItem, index) => index !== id)
+    })
+  }
+
   return (
     <Layout>
       <NoteInput noteAdd={noteAdd} />
-      {notes.map((note) => (
-        <Note note={note} />
-      ))}
+      <Notes notes={notes} deleteNote={deleteHandler} />
     </Layout>
   )
 }
