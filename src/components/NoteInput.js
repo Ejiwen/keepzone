@@ -8,6 +8,7 @@ const NoteInput = ({ noteAdd }) => {
 
   const handlerFn = (e) => {
     const { name, value } = e.target
+
     setNote((prevNote) => {
       return {
         ...prevNote,
@@ -18,7 +19,12 @@ const NoteInput = ({ noteAdd }) => {
 
   const sendHandler = (e) => {
     e.preventDefault()
+    console.log(e.target)
     noteAdd(note)
+    setNote({
+      title: "",
+      body: "",
+    })
   }
 
   return (

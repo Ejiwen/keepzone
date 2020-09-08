@@ -11,7 +11,6 @@ const App = () => {
     setNotes((prevNote) => {
       return [...prevNote, newNote]
     })
-    console.log(notes.length)
   }
 
   const deleteHandler = (id) => {
