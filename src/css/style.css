@@ -6,10 +6,16 @@
   box-sizing: inherit; }
 
 body {
-  padding: 1.6rem;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   color: gray; }
+
+.header {
+  border: 1px solid red; }
+  .header ul li {
+    display: inline-block;
+    text-transform: uppercase; }
 
 .formulaire {
   border: 1px rgba(89, 89, 89, 0.872) solid;
@@ -22,6 +28,7 @@ body {
     width: 100%;
     border-radius: 3px;
     border: none;
+    outline: none;
     font-size: 14px;
     padding-left: 10px; }
   .formulaire textarea {
@@ -30,7 +37,8 @@ body {
     border: none;
     font-size: 14px;
     padding-left: 10px;
-    resize: none; }
+    resize: none;
+    outline: none; }
   .formulaire button {
     position: absolute;
     bottom: -15px;
