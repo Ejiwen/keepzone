@@ -10,3 +10,36 @@ body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   color: gray; }
+
+.formulaire {
+  border: 1px rgba(89, 89, 89, 0.872) solid;
+  position: relative;
+  max-width: 700px;
+  margin: auto; }
+  .formulaire input {
+    display: block;
+    height: 35px;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    font-size: 14px;
+    padding-left: 10px; }
+  .formulaire textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    padding-left: 10px;
+    resize: none; }
+  .formulaire button {
+    position: absolute;
+    bottom: -15px;
+    right: 12px;
+    border-radius: 100px;
+    padding: 2px;
+    color: #136d31;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none; }

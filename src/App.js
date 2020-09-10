@@ -3,6 +3,8 @@ import Layout from "./layout/Layout"
 import NoteInput from "./components/NoteInput"
 import Notes from "./components/Notes"
 import "./css/style.css"
+// import Button from "@material-ui/core/Button"
+// import DeleteForeverIcon from "@material-ui/icons/DeleteForever"
 
 const App = () => {
   const [notes, setNotes] = useState([])

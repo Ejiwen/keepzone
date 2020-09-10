@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import AddIcon from "@material-ui/icons/Add"
 
 const NoteInput = ({ noteAdd }) => {
   const [note, setNote] = useState({
@@ -28,22 +29,24 @@ const NoteInput = ({ noteAdd }) => {
   }
 
   return (
-    <form onSubmit={sendHandler}>
+    <form onSubmit={sendHandler} className="formulaire">
       <input
         onChange={handlerFn}
         name="title"
         value={note.title}
         type="text"
-        placeholder="add new note"
+        placeholder="Title"
       />
       <textarea
         onChange={handlerFn}
         name="body"
         value={note.body}
         rows="4"
-        cols="50"
+        placeholder="Take note"
       ></textarea>
-      <button type="submit"> ADD </button>
+      <button type="submit">
+        <AddIcon />
+      </button>
     </form>
   )
 }
