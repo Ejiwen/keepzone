@@ -18,7 +18,7 @@ const Note = ({ note, id, deleteNote }) => {
       <p> {note.body} </p>
       <button onClick={deleteHandler}>DELETE</button>
     </div>
-  )
+  ) 
 }
 
 export default Note
