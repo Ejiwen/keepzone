@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import Layout from "./layout/Layout"
 import NoteInput from "./components/NoteInput"
 import Notes from "./components/Notes"

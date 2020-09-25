@@ -1,9 +1,16 @@
-import React from "react"
+import React, {useEffect} from "react"
 
 const Note = ({ note, id, deleteNote }) => {
   const deleteHandler = () => {
     deleteNote(id)
   }
+
+  useEffect(() => {
+    console.log("something change...");
+    return () => {
+      console.log("Cleaning up effect ...");
+    }
+  },[])
 
   return (
     <div>

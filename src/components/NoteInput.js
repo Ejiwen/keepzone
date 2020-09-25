@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import AddIcon from "@material-ui/icons/Add"
 
 const NoteInput = ({ noteAdd }) => {
+
   const [note, setNote] = useState({
     title: "",
     body: "",
@@ -20,7 +21,6 @@ const NoteInput = ({ noteAdd }) => {
 
   const sendHandler = (e) => {
     e.preventDefault()
-    console.log(e.target)
     noteAdd(note)
     setNote({
       title: "",
@@ -43,7 +43,9 @@ const NoteInput = ({ noteAdd }) => {
         value={note.body}
         rows="4"
         placeholder="Take note"
-      ></textarea>
+      >
+
+      </textarea>
       <button type="submit">
         <AddIcon />
       </button>
